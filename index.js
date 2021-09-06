@@ -30,10 +30,12 @@ var useranswer = readlinesync.question(questionlist[i].question);
     else{
       if (useranswer == questionlist[i].answer){
         console.log("You are Right");
+        
       }
       else{
         console.log("You are not Right");
       }
     }
   }
-  
+
+console.log("Final score is" = score)
