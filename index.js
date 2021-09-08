@@ -1,23 +1,24 @@
-var readlinesync = require('readline-sync');
-var score = 0;
+var readlinesync = require("readline-sync");
+var score = 0 ;
 
 console.log("VALORANT QUIZZ\nLets see how much you know about valorant")
 var questionlist = [
-{question : "How many maps are there in valorant ? ",
-answer : 6,
-},
-{
-  question : "How many Agents are there in valorant ? ",
-answer : 16,
-},
-{
-  question : "How many blades do Jett have in her ULT ? ",
-answer : 5,
-},
-{
-  question : "How many blades do Jett have in her ULT ? ",
-answer : 5,
-}
+  {  
+   question : "How many maps are there in valorant ? ",
+  answer : 6,
+  },
+  {
+    question : "How many Agents are there in valorant ? ",
+    answer : 16,
+  },
+  {
+    question : "How many blades do Jett have in her ULT ? ",
+     answer : 5,
+  },
+  {
+    question : "How many blades do Jett have in her ULT ? ",
+     answer : 5,
+  }
 ]
 
 for (i=0;i<questionlist.length;i++){
@@ -30,6 +31,7 @@ var useranswer = readlinesync.question(questionlist[i].question);
     else{
       if (useranswer == questionlist[i].answer){
         console.log("You are Right");
+        score += 1 ;
         
       }
       else{
@@ -38,4 +40,4 @@ var useranswer = readlinesync.question(questionlist[i].question);
     }
   }
 
-console.log("Final score is" = score)
+console.log("Final score  is = " + score )
